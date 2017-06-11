@@ -36,12 +36,16 @@ void TriangleCoordinates::Print() const
 				cout << symbol;
 				row++;
 			}
+			//draw horozontal border
 			else if (h % 10 == 1 || h % 10 == 0)
 				cout << symbol;
+			//draw vertical border
 			else if (w % 10 == 1 || w % 10 == 0)
 				cout << symbol;
+			//draw triangle hypotinuses
 			else if (w % 10 == diag)
 				cout << symbol;
+			//draw a "top" triangle, eg. A2, C6
 			else if (h % 10 == 3 && w % 10 == 6)
 			{
 				cout << row;
@@ -52,6 +56,7 @@ void TriangleCoordinates::Print() const
 					w += 2;
 				topColumn += 2;
 			}
+			//draw a "bottom" triangle, eg. B2, B6
 			else if (h % 10 == 8 && w % 10 == 4)
 			{
 				cout << row;
