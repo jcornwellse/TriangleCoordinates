@@ -43,7 +43,6 @@ void GetSelection()
 	int selection = 0;
 
 	cin >> selection;
-	//49 and 57 are decimal for '1' and '9'
 	if (selection >= 1 && selection <= 9)
 	{
 		switch (selection)
@@ -160,7 +159,7 @@ void FindTriangleFromCoordinates(TriangleCoordinates tc)
 
 	cout << "Please enter vertex coordinates assuming the top leftmost pixel is (0,0) and increases to the right and downwards" << endl;
 	cout << "All numbers should be in increments of 10, and end with either a 1 or 0." << endl;
-	cout << "For example, the vertex coordinates are correct: (0, 10) (10, 0), (10,10)" << endl;
+	cout << "For example, the vertex coordinates are correct, and for triangle A1: (0, 10) (10, 0), (10,10)" << endl;
 
 	while (v1x < 0 || v1x > 100)
 	{
